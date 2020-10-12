@@ -9,18 +9,19 @@ int main()
     _tsetlocale(LC_ALL, _T("portuguese"));
     unsigned tamanho = 13; // limite de numeros
     Pilha<int> p(tamanho); // criar pilha
-    Fila<int> FilaCrescente(tamanho); //ordem da exibição
+    Fila<int> FilaCrescente(tamanho); //ordem da exibiï¿½ï¿½o
     string matricula;
     do
     {
-        std::cout << "Insira o número de matrícula com 13 digitos: ";
+        //lucas viadao
+        std::cout << "Insira o nï¿½mero de matrï¿½cula com 13 digitos: ";
         getline(cin, matricula);
         if (matricula.size() != tamanho)
-            std::cout << "O numero de matrícula digitado não contém 13 digitos\n";
+            std::cout << "O numero de matrï¿½cula digitado nï¿½o contï¿½m 13 digitos\n";
     }
     while (matricula.size() != tamanho);
-    std::cout << "\nNúmero de matrícula: \n" << matricula;
-    std::cout << "\nInserindo os digitos do numero de matrícula na pilha...\n";
+    std::cout << "\nNï¿½mero de matrï¿½cula: \n" << matricula;
+    std::cout << "\nInserindo os digitos do numero de matrï¿½cula na pilha...\n";
     std::cout << "\nPilha: [";
     for (int i = 0; i < tamanho; i++)
     {
